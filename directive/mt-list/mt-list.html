@@ -1,0 +1,9 @@
+<div>
+    <ul ng-class="{'nav-justified': orientation === 'horizontal', 'nav-stacked': orientation === 'vertical'}" class="nav nav-pills" >
+      <li ng-repeat="item in items"
+        ng-class="{'active': item === selected}"
+        ng-click="selectItem(item)">
+        <a href="">{{ item }}</a>
+      </li>
+    </ul>
+</div>
